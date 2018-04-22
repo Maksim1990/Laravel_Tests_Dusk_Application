@@ -30,6 +30,8 @@ class PostCreateTest extends DuskTestCase
                 ->type('#title','New post test')
                 ->type('#body','Test description')
                 ->click('.btn-warning')
+                //-- Resizing browser screen
+                //->resize(420, 580)
                 ->assertSee('New post test');
         });
     }
